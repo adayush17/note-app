@@ -25,3 +25,27 @@
         }
     }
 }
+
+// media tags
+
+@media only screen and (max-width: 600px) {
+    .noteContainer{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        height: 100%;
+
+        .notes{
+            height: 90%;
+            gap: 20;
+
+            h3{
+                margin-top: 30px;
+                margin-left: 0px;
+                padding-left: 0px;
+                width: 80%;
+                font-size: 30px;
+            }
+        }
+    }
+  }
