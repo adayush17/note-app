@@ -27,9 +27,9 @@ const Note = (props) => {
     const date = new Date(value);
 
     let hrs=date.getHours();
-    let amPm = hrs>12 ? "Pm":"AM";
+    let amPm = hrs>12 ? "PM":"AM";
     hrs = hrs? hrs:"12";
-    hrs = hrs>12 ? (hrs = hrs - 24):hrs;
+    hrs = hrs > 12 ? (hrs = hrs-12) : hrs;
 
     let min = date.getMinutes();
     min = min<10 ? "0"+min:min;
